@@ -13,7 +13,7 @@ export const HERO_COPY = {
   },
   subhead:
     "Start a group gift in under a minute. Share one link, everyone chips in, and nobody fronts the money or chases friends.",
-  primaryCta: { label: "Start a gift", href: "#start" },
+  primaryCta: { label: "Start a gift", href: "#waitlist" },
   secondaryCta: { label: "See how it works", href: "#how-it-works" },
   notes: {
     cta: "takes 60 seconds",

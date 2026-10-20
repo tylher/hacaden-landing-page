@@ -29,6 +29,13 @@ export const BRIDGES = {
     note: "and now, the best part.",
     noteTone: "dark",
   },
+  revealToFooter: {
+    fromColor: COLORS.coral,
+    topColor: COLORS.ink,
+    bottomColor: COLORS.gold,
+    note: "see you at the party.",
+    noteTone: "light",
+  },
 };
 
 /* ------------------------------------------------------------------
@@ -165,4 +172,53 @@ export const MOCKS = {
     cta: "Chip in",
     foot: "Card or transfer. No account needed.",
   },
+};
+
+/* ------------------------------------------------------------------
+   SECTION 4: THE REVEAL (the payoff) + WAITLIST (the last stop)
+   Notes use friend ids from FRIENDS (data/hero.js).
+------------------------------------------------------------------ */
+export const REVEAL = {
+  eyebrow: "And then, the best part",
+  headline: { before: "The gift arrives with", highlight: "everyone in it." },
+  body: "Theo opens one page and sees who showed up: every name, every message, one big pile of love. It's the part a bank alert could never do.",
+  card: {
+    label: "A gift for you",
+    title: "Happy 30th, Theo!",
+    sub: "From 12 people in 5 cities",
+    count: "12 of 12 are in",
+    total: "₦250,000",
+    totalLabel: "raised together",
+    button: "Open your gift",
+  },
+  notes: [
+    { from: "ada", text: "Thirty looks good on you. Please don't spend it all on cake.", tilt: -3, bg: COLORS.gold },
+    { from: "sam", text: "Cheers to the next 30, Theo.", tilt: 2, bg: COLORS.paper },
+    { from: "leo", text: "Wish I was there. Eat a slice for me.", tilt: 2.5, bg: COLORS.sky },
+    { from: "mei", text: "Organized by me, funded by everyone. Enjoy!", tilt: -2, bg: COLORS.gold },
+    { from: "noa", text: "Sent with love from Paris.", tilt: -2.5, bg: COLORS.paper },
+  ],
+  more: "+7 more people",
+};
+
+export const WAITLIST = {
+  eyebrow: "Last stop: your turn",
+  title: "Be first to start a gift.",
+  body: "Hacaden is opening soon. Leave your email and we'll tell you the moment you can start your first pool.",
+  label: "Your email",
+  placeholder: "you@example.com",
+  button: "Join the waitlist",
+  busy: "Joining...",
+  success: "You're on the list. Watch your inbox.",
+  error: "That email doesn't look right. Check it and try again.",
+  fine: "No spam. One email when we open, and that's it.",
+};
+
+export const FOOTER = {
+  tagline: "Together, every gift tells a story.",
+  links: [
+    { label: "How it works", href: "#how-it-works" },
+    { label: "Join the waitlist", href: "#waitlist" },
+  ],
+  legal: "© 2026 Hacaden",
 };
