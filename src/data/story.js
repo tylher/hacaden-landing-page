@@ -1,5 +1,13 @@
 import { COLORS } from "./theme";
 
+export const SITE = {
+  name: "Hacaden",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+  title: "Hacaden | One gift. Every hand in it.",
+  description:
+    "Start a group gift in under a minute. Share one link, everyone chips in, and nobody fronts the money or chases friends.",
+};
+
 /* ------------------------------------------------------------------
    STORY BRIDGES
    A bridge sits on the seam between two sections: a torn sheet of the
@@ -94,8 +102,6 @@ export const CHAT = {
     { from: "mei", mine: true, text: "reminder: 4 people still haven't sent" },
   ],
 };
-
-
 
 /* ------------------------------------------------------------------
    SECTION 3: HOW IT WORKS ("there's a better way")
@@ -192,11 +198,36 @@ export const REVEAL = {
     button: "Open your gift",
   },
   notes: [
-    { from: "ada", text: "Thirty looks good on you. Please don't spend it all on cake.", tilt: -3, bg: COLORS.gold },
-    { from: "sam", text: "Cheers to the next 30, Theo.", tilt: 2, bg: COLORS.paper },
-    { from: "leo", text: "Wish I was there. Eat a slice for me.", tilt: 2.5, bg: COLORS.sky },
-    { from: "mei", text: "Organized by me, funded by everyone. Enjoy!", tilt: -2, bg: COLORS.gold },
-    { from: "noa", text: "Sent with love from Paris.", tilt: -2.5, bg: COLORS.paper },
+    {
+      from: "ada",
+      text: "Thirty looks good on you. Please don't spend it all on cake.",
+      tilt: -3,
+      bg: COLORS.gold,
+    },
+    {
+      from: "sam",
+      text: "Cheers to the next 30, Theo.",
+      tilt: 2,
+      bg: COLORS.paper,
+    },
+    {
+      from: "leo",
+      text: "Wish I was there. Eat a slice for me.",
+      tilt: 2.5,
+      bg: COLORS.sky,
+    },
+    {
+      from: "mei",
+      text: "Organized by me, funded by everyone. Enjoy!",
+      tilt: -2,
+      bg: COLORS.gold,
+    },
+    {
+      from: "noa",
+      text: "Sent with love from Paris.",
+      tilt: -2.5,
+      bg: COLORS.paper,
+    },
   ],
   more: "+7 more people",
 };
@@ -211,14 +242,32 @@ export const WAITLIST = {
   busy: "Joining...",
   success: "You're on the list. Watch your inbox.",
   error: "That email doesn't look right. Check it and try again.",
+  failed: "Something went wrong on our side. Please try again in a moment.",
   fine: "No spam. One email when we open, and that's it.",
 };
 
 export const FOOTER = {
   tagline: "Together, every gift tells a story.",
+  blurb:
+    "Group gifts, made together. Start a pool, share one link, and let everyone in.",
+  cta: "Start a gift",
+  ring: "together · every gift tells a story · ",
   links: [
     { label: "How it works", href: "#how-it-works" },
     { label: "Join the waitlist", href: "#waitlist" },
   ],
+  top: "Back to the start",
   legal: "© 2026 Hacaden",
+};
+
+/* ------------------------------------------------------------------
+   NAV (the floating pill at the top of the page)
+------------------------------------------------------------------ */
+export const NAV = {
+  links: [
+    { label: "The problem", href: "#problem" },
+    { label: "How it works", href: "#how-it-works" },
+    { label: "The reveal", href: "#reveal" },
+  ],
+  cta: { label: "Join the waitlist", href: "#waitlist" },
 };

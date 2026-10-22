@@ -21,3 +21,13 @@ body {
   background: #fff6e8;
   color: #2b1a17;
 }
+
+
+html {
+  scroll-padding-top: 5.5rem;
+}
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

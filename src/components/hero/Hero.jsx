@@ -3,8 +3,8 @@
 import StickerButton from "@/components/ui/StickerButton";
 import { FRIENDS, HERO_COPY } from "@/data/hero";
 import { COLORS, SPRINGS } from "@/data/theme";
-import useReveal from "@/hooks/useReveal";
 import usePrefersReducedMotion from "@/hooks/usePrefersReducedMotion";
+import useReveal from "@/hooks/useReveal";
 import { motion } from "framer-motion";
 import { useCallback, useState } from "react";
 import HeroStage from "./HeroStage";
@@ -139,7 +139,7 @@ export default function Hero() {
     <section className="relative isolate overflow-hidden bg-paper text-ink">
       <Topo />
 
-      <div className="mx-auto grid min-h-[100svh] max-w-7xl items-center gap-12 px-5 pt-14 pb-28 sm:px-8 lg:grid-cols-[1.02fr_1fr] lg:gap-6 lg:py-20">
+      <div className="mx-auto grid min-h-[100svh] max-w-7xl items-center gap-12 px-5 pb-28 pt-24 sm:px-8 lg:grid-cols-[1.02fr_1fr] lg:gap-6 lg:pb-20 lg:pt-28">
         {/* copy */}
         <motion.div
           className="relative z-10"

@@ -1,4 +1,5 @@
 import HacadenLoader from "@/components/HacadenLoader";
+import { SITE } from "@/data/story";
 import {
   Bricolage_Grotesque,
   Caveat_Brush,
@@ -37,9 +38,37 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Hacaden | Give together",
-  description:
-    "Start a group gift in under a minute. Share one link, everyone chips in, and the gift tells a story.",
+  metadataBase: new URL(SITE.url),
+  title: { default: SITE.title, template: `%s | ${SITE.name}` },
+  description: SITE.description,
+  applicationName: SITE.name,
+  keywords: [
+    "group gifting",
+    "group gift",
+    "pool money for a gift",
+    "gift contributions",
+    "Hacaden",
+  ],
+  openGraph: {
+    type: "website",
+    siteName: SITE.name,
+    title: SITE.title,
+    description: SITE.description,
+    url: "/",
+    locale: "en",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE.title,
+    description: SITE.description,
+  },
+  robots: { index: true, follow: true },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#FFF6E8",
 };
 
 export default function RootLayout({ children }) {
@@ -48,7 +77,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${bricolage.variable} ${dmSans.variable} ${caveatBrush.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
-      <body className="">
+      <body className="min-h-full flex flex-col font-sans">
         <HacadenLoader>{children}</HacadenLoader>
       </body>
     </html>

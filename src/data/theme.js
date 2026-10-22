@@ -27,3 +27,11 @@ export const SPRINGS = {
   stamp: { type: "spring", stiffness: 520, damping: 17 },
   soft: { type: "spring", stiffness: 220, damping: 24 },
 };
+
+export const LOGO = {
+  src: "/images/hacaden-logo.png",
+  width: 1152,
+  height: 1150,
+  alt: "Hacaden logo",
+  outline: "/images/hacaden-logo-outline.png", // empty line-art version (the loader uses it too)
+};
